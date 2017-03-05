@@ -55,11 +55,11 @@ target_include_directories(mandelbrot PUBLIC ${MANDELBROT_DEP_DIR}/glfw/include)
 #####################################
 if(MSVC)
   SET_TARGET_PROPERTIES(mandelbrot
-    PROPERTIES COMPILE_FLAGS "/W4 /Wall")
+    PROPERTIES COMPILE_FLAGS "/W4")
 
   target_link_libraries(mandelbrot opengl32 gdi32)
 elseif(CMAKE_COMPILER_IS_GNUCXX)
   SET_TARGET_PROPERTIES(mandelbrot
-    PROPERTIES COMPILER_FLAGS "-Wall -Wpedantic -g -std=c++11")
+    PROPERTIES COMPILER_FLAGS "-Wpedantic -g -std=c++11")
   target_link_libraries(mandelbrot GL)
 endif()

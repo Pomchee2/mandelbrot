@@ -6,15 +6,15 @@ class Generator {
     int width;
     int height;
 
-    float initRealStart;
-    float initRealEnd;
-    float initImagStart;
-    float initImagEnd;
+    double initRealStart;
+    double initRealEnd;
+    double initImagStart;
+    double initImagEnd;
 
-    float realStart;
-    float realEnd;
-    float imagStart;
-    float imagEnd;
+    double realStart;
+    double realEnd;
+    double imagStart;
+    double imagEnd;
 
     int itcap;
 
@@ -23,11 +23,11 @@ class Generator {
 
     bool needNewSet;
 
-    float pixels[250000];
+    double pixels[1000000];
 
-    void generate(float*(*pointFunction)(float, float, int));
+    void generate(double*(*pointFunction)(double, double, int));
 
-    float* getComplexNumber(int x, int y, float realStart, float realEnd, float imagStart, float imagEnd, int width, int height);
+    double* getComplexNumber(int x, int y, double realStart, double realEnd, double imagStart, double imagEnd, int width, int height);
 
     Generator(float width, float height);
 };

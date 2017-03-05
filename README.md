@@ -1,2 +1,4 @@
 # mandelbrot
-generates a mandelbrot set based on an input function
+Generates a fractal based on input function
+
+Scroll in and out to zoom in and out
