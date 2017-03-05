@@ -1,0 +1,8 @@
+build.sh
+build
+bin
+deps/prebuilt
+*.swp
+*.swo
+*~
+
